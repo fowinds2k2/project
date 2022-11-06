@@ -17,7 +17,7 @@ body{
     background-color: var(--main_orange);
     height: 3px;
     width: 200px;
-    margin-top: -15px;
+    margin-top: -5px;
 }
 
 .home{
@@ -58,6 +58,9 @@ body{
 .explore:hover{
     background-color: var(--dark_orange);
     transition: 0.4s;
+    font-size: 19px;
+    height: 55px;
+    width: 205px;
 }
 
 .explore a{
@@ -144,14 +147,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 7px 7px var(--main_orange);
+    box-shadow: 7px 7px var(--dark_orange);
+}
+
+.form_box h1{
+    position: absolute;
+    top: 25px;
 }
 
 .each_form{
     margin-top: 15px;
     border: 1px solid rgb(136, 136, 136);
     border-radius: 15px;
-    width: 500px;
     height: 20px;
     display: flex;
     flex-direction: row;
@@ -159,6 +166,7 @@ body{
     justify-items: center;
     align-items: center;
 }
+
 
 .each_form i {
     color: var(--main_orange);
@@ -169,4 +177,44 @@ body{
     margin-left: 10px;
     border: var(--trans);
     font-size: 15px;
+    width: 100%;
+    height: 90%;
+}
+
+.twocol_form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.twocol{
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 15px;
+    width: 245px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tc1 input{
+    margin-left: 25px;
+}
+
+.tc2{
+    margin-left: 10px;
+}
+
+.twocol i {
+    color: var(--main_orange);
+    font-size: 22px;
+}
+
+.twocol input{
+    margin-left: 10px;
+    border: var(--trans);
+    font-size: 15px;
+    width: 100%;
 }
