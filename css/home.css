@@ -141,10 +141,10 @@ body{
     background-color: var(--white);
     border-radius: 20px;
     width: 25%;
-    height: 60%;
+    height: 55%;
     position:absolute;
     right: 0;
-    bottom: 2%;
+    bottom: 5%;
     margin: 50px;
     padding: 100px;
     display: flex;
