@@ -1,14 +1,8 @@
 @import "/css/color.css";
 
-:root{
-    --white: #fff;
-    --trans: rgba(0,0,0,0);
-    --main_orange: #ED7D31;
-    --dark_orange: #a84f13;
-}
-
 html{
     scroll-behavior: smooth;
+    background-color: var(--grey);
 }
 
 body{
@@ -124,7 +118,7 @@ body{
     width: 100%;
     flex-direction: row;
     position: fixed;
-    padding: 15px 35px;
+    padding: 30px 35px;
     background-color: rgba(83, 83, 83, 0);
     justify-content: space-between;
     align-items: center;
@@ -142,7 +136,7 @@ body{
 }
 
 .logo_img{
-    height: 60px;
+    height: 45px;
 }
 
 .nav{
@@ -295,4 +289,9 @@ body{
     color: rgb(133, 133, 133);
     font-style: italic;
     font-weight: 50;
+}
+
+.toprate{
+    width: 80%;
+    color: #a84f13;
 }

@@ -1,5 +1,7 @@
 :root{
-    --white: #ffffff
-    --main_green: #00be00
-    --trans: rgba(0,0,0,0%)
+    --white: #fff;
+    --trans: rgba(0,0,0,0);
+    --main_orange: #ED7D31;
+    --dark_orange: #a84f13;
+    --grey: #F2F2F2;
 }
