@@ -1,0 +1,16 @@
+@import "/css/color.css";
+
+.below{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.below_content{
+    background-color: var(--white);
+    width: 80%;
+}

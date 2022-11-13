@@ -1,4 +1,5 @@
 @import "/css/color.css";
+@import "./below_content.css";
 
 html{
     scroll-behavior: smooth;
@@ -47,6 +48,7 @@ body{
     width: 200px;
     margin-top: -5px;
 }
+
 
 .home{
     width: 45%;
@@ -125,8 +127,18 @@ body{
     z-index: 999;
 }
 
-.navbar-color{
-    background: rgba(56, 56, 56, 0.8);
+.navbar-color1{
+    background: rgba(56, 56, 56, 0.3);
+    width: 100%;
+}
+
+.navbar-color2{
+    background: rgba(56, 56, 56, 0.7);
+    width: 100%;
+}
+
+.navbar-color3{
+    background: rgba(56, 56, 56, 1);
     width: 100%;
 }
 
