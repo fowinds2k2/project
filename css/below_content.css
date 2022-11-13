@@ -1,5 +1,10 @@
 @import "/css/color.css";
 
+.below_line{
+    width: 500px !important; 
+    margin-top: -15px !important;
+}
+
 .below{
     position: absolute;
     top: 100%;
@@ -13,4 +18,44 @@
 .below_content{
     background-color: var(--white);
     width: 80%;
+    padding-top: 20px;
+}
+
+.movedown{
+    padding-top: 150px !important;
+}
+
+.services{
+}
+
+.title_service{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.all_services{
+    display: grid;
+    grid-template-areas: 
+    "sv1  sv2"
+    "sv3  sv4";
+    grid-template-columns: 50% 50%;
+}
+
+.advise{
+    grid-area: sv1;
+}
+
+.booktour{
+    grid-area: sv2;
+}
+
+.hotel{
+    grid-area: sv3;
+}
+
+.plane{
+    grid-area: sv4;
 }
