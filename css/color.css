@@ -1,7 +1,13 @@
 :root{
     --white: #fff;
     --trans: rgba(0,0,0,0);
-    --main_orange: #ED7D31;
-    --dark_orange: #a84f13;
+    /* --main_orange: #ED7D31; */
+    /* --dark_orange: #a84f13; */
+    --main_orange: rgb(68, 115, 245);
+    --dark_orange: rgb(36, 73, 173);;
+    /* --main_orange: rgb(16, 206, 57);
+    --dark_orange: rgb(13, 163, 46); */
+    
+
     --grey: #F2F2F2;
 }

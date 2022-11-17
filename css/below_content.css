@@ -42,6 +42,40 @@
     "sv1  sv2"
     "sv3  sv4";
     grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.services_box{
+    width: 90%;
+    height: 70px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px rgb(214, 214, 214);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+.services_box i {
+    width: 70px;
+    text-align: center;
+    font-size: 35px;
+    color: var(--main_orange);
+
+}
+
+.services_box span{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.services_box:hover{
+    font-size: larger;
+    background-color: rgb(235, 235, 235);
+    transition: 0.4s;
 }
 
 .advise{
