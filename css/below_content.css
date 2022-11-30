@@ -253,6 +253,7 @@
 .img1{
     width: 420px;
     image-rendering: pixelated; 
+    overflow: hidden;
 
     /* height: 500px; */
     /* margin-right: 50px; */
