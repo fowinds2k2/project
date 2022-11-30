@@ -17,19 +17,19 @@ jQuery(function($){
                 $navbar.removeClass('navbar-color3');
                 $navbar.addClass('navbar-color1');
                 $gotop.show();
-                $belowct.removeClass('movedown');
+                // $belowct.removeClass('movedown');
             } else {
                 if ($current > 500 && $current < 1000){
                     $navbar.removeClass('navbar-color1');
                     $navbar.removeClass('navbar-color3');
                     $navbar.addClass('navbar-color2');
-                    $belowct.removeClass('movedown');
+                    // $belowct.removeClass('movedown');
                 } else {
                     if ($current > 1000){
                         $navbar.removeClass('navbar-color1');
                         $navbar.removeClass('navbar-color2');
                         $navbar.addClass('navbar-color3');
-                        $belowct.addClass('movedown');
+                        // $belowct.addClass('movedown');
                     }
                 }
             }
@@ -48,6 +48,6 @@ jQuery(function($){
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        setTimeout(showSlides, 3000); 
     }
 });
