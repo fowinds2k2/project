@@ -88,12 +88,41 @@ function doit(){
     let pay = document.getElementById("pay")
     let pbtn = document.getElementById("pay_btn")
 
+
+    let visaC = document.getElementById("visa")
+    let mastercardC = document.getElementById("mastercard")
+    let paypalC = document.getElementById("paypal")
+    let bankC = document.getElementById("bank")
+
+
     showName.innerHTML = name 
     showPhoto.innerHTML = "<img class='pmt_img' src='"+photo+"'>"
     showDura.innerHTML = dura
     showRate.innerHTML = rate
     showSub.innerHTML = sub
     showPrice.innerHTML = price
+
+    function isCheckPayment(){
+        if (!visaC.checked && !mastercardC.checked && !paypalC.checked && !bankC.checked){
+            return 0
+        } else return 1
+    }
+
+    function isFilledInfo(){
+        let usname = document.getElementById("username").value
+        let usnum = document.getElementById("usernum").value
+        let valid = document.getElementById("validdate").value
+        let cvv = document.getElementById("cvv").value
+        let usid = document.getElementById("userid").value
+        let uscountry = document.getElementById("usercountry").value
+        if (usname=='') alert("Chưa nhập tên chủ thẻ")
+        else if (usnum=='') alert("Chưa nhập số thẻ")
+            else if (valid=='') alert("Chưa nhập ngày hết hạn thẻ")
+                else if (cvv=='') alert("Chưa nhập CVV")
+                    else if (usid=='') alert("Chưa nhập CMND/CCCD")
+                        else if (uscountry=='') alert("Chưa chọn quốc tịch")
+                            else alert("Bạn sẽ được chuyển đến trang thanh toán đã chọn")
+    }
 
     pay.style.display = "none";
 
@@ -120,7 +149,12 @@ function doit(){
 
     
     pbtn.addEventListener('click',function(){
-        alert("Chuyển đến trang thanh toán đã chọn")
+        if (!isCheckPayment()){
+            alert("Chưa chọn phương thức thanh toán")
+        } else {
+            isFilledInfo()
+        }
+        
     })
 }
 

@@ -53,38 +53,40 @@
                     <div class="pm_method">
                         <span class="mt_tt">1. Chọn phương thức thanh toán</span>
                         <div class="mt">
-                            <input type="checkbox" name="visa" id="">
-                            <img src="img/visa.png" alt="">
-                            <input type="checkbox" name="mastercard" id="">
-                            <img src="img/mastercard.png" alt="">
-                            <input type="checkbox" name="paypal" id="">
-                            <img src="img/paypal.png" alt="">
-                            <input type="checkbox" name="bank" id="">
-                            <span>Chuyển khoản ngân hàng</span>
+                            <form >
+                                <input type="radio" name="pmmt" id="visa">
+                                <img src="img/visa.png" alt="">
+                                <input type="radio" name="pmmt" id="mastercard">
+                                <img src="img/mastercard.png" alt="">
+                                <input type="radio" name="pmmt" id="paypal">
+                                <img src="img/paypal.png" alt="">
+                                <input type="radio" name="pmmt" id="bank">
+                                <span>Chuyển khoản ngân hàng</span>
+                            </form>
                         </div>
                         <span class="mt_tt">2. Thông tin chủ thẻ</span>
                         <div class="pm_user">
                             <div class="each_if">
                                 <span>Họ và tên:</span> 
-                                <input type="text" name="" id="" placeholder="Vd: NGUYEN VAN A">
+                                <input type="text" name="" id="username" placeholder="Vd: NGUYEN VAN A">
                             </div>
                             <div class="each_if">
                                 <span>Số thẻ:</span> 
-                                <input type="text" name="" id="" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                <input type="text" name="" id="usernum" placeholder="XXXX-XXXX-XXXX-XXXX">
                             </div>
                             <div class="each_if two_if">
                                 <span>Ngày hết hạn:</span> 
-                                <input type="text" placeholder="Invalid Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                <input type="text" id="validdate" placeholder="Invalid Date" onfocus="(this.type='date')" onblur="(this.type='text')">
                                 <span> / CVV:</span> 
-                                <input type="text" name="" id="" placeholder="XXX">
+                                <input type="text" name="" id="cvv" placeholder="XXX">
                             </div>
                             <div class="each_if">
                                 <span>CMND/CCCD</span> 
-                                <input type="text" name="" id="" placeholder="CMND/CCCD">
+                                <input type="tel" name="" id="userid" placeholder="CMND/CCCD">
                             </div>
                             <div class="each_if">
                                 <span>Quốc tịch:</span> 
-                                <input list="country" placeholder="-Chọn quốc tịch-" >
+                                <input id="usercountry" list="country" placeholder="-Chọn quốc tịch-" >
                                 <datalist id="country">
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
