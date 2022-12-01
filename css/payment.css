@@ -7,6 +7,13 @@ html, body {
     overflow-y: hidden;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
 h2{
     font-size: 27px;
 }
@@ -39,7 +46,7 @@ h2{
 .payment_content{
     right: 8% !important;
     width: 70% !important;
-    height: 60% !important;
+    height: 65% !important;
     padding: 70px !important;
 
 }
@@ -152,7 +159,7 @@ h2{
     margin-top: 10px;
 }
 
-.pm_user input{
+.pm_user input, .select_am input{
     width: 400px;
     height: 25px;
 }
@@ -162,3 +169,46 @@ h2{
     /* margin-left: 40px; */
 }
 
+.ift_tt{
+    margin-left: 50px;
+}
+
+.ttt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ttt span{
+    font-size: 28px;
+    color: var(--main);
+}
+
+.am_btn{
+    width: 160px !important;
+    height: 15px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 55%;
+}
+
+.more_tt{
+    margin-left: 20%;
+    align-self: center;
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.p_btn{
+    width: 100px !important;
+    height: 20px !important;  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px 60px;
+}

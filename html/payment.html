@@ -34,16 +34,20 @@
             </div>
             <div class="pm_content">
                 <div class="pm_tour">
-                    <img class="pmt_img" src="/img/cantho.jpg" alt="">
-                    <span class="pmt_place_name">Can Tho</span>
+                    <div id="pmt_img">
+                        
+                    </div>
+                    <div class="pmt_place_name" id="pmt_place_name">
+                       
+                    </div>
                     <div class="duration dura">
                         <i class="fa-regular fa-clock"></i>
-                        <span class="dura_text">3 ngày 2 đêm</span>
+                        <span class="dura_text" id="dura_text"> </span>
                         <i class="fa-solid fa-star"></i>
-                        <span class="rate_text">4.0</span>
+                        <span class="rate_text" id="rate_text"> </span>
                     </div>
-                    <span class="pmt_place_sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur odit veniam corrupti deleniti non eum fugit omnis deserunt, quidem exercitationem rem dolore dolores repellat architecto id atque, doloremque dolorem.</span>
-                    <div class="pmt_price">4.999.000 VND</div>
+                    <span class="pmt_place_sub" id="pmt_place_sub"> </span>
+                    <div class="pmt_price" id="pmt_price"> </div>
                 </div>
                 <div class="pm_info">
                     <div class="pm_method">
@@ -330,11 +334,39 @@
                             </div>
                         </div>
                         <span class="mt_tt">3. Thông tin tour</span>
-                        
+                        <div class="if_tour">
+                            <span class="ift_tt">Số lượng hành khách: </span>
+                            <div class="select_am">
+                                <div class="select_adult each_if">
+                                    <span>Người lớn: </span>
+                                    <input placeholder="Tổng giá tour = giá tour x số lượng hành khách" type="number" name="adult" id="adult_am" min="1">
+                                </div>
+                                <div class="select_kid each_if">
+                                    <span>Trẻ em:</span>
+                                    <input placeholder="Dưới 10 tuổi. Giá vé bằng 60% giá người lớn" type="number" name="kid" id="kid_am" min="0">
+                                </div>
+                                <div class="each_form commit_btn am_btn">
+                                    <button id="commit_am">Xác nhận số lượng</button>
+                                </div>
+                            </div>
+                            <div id="ttt_box">
+                                <span class="ift_tt">Tổng thành tiền:</span>
+                                <div class="ttt">
+                                    <span id="ttt_text">0</span>
+                                    <span style="margin-left: 10px;"> VNĐ</span>
+                                </div>
+                                <span class="more_tt" id="more_tt"></span>
+                            </div>
+                        </div>
+                        <div class="each_form commit_btn p_btn"  id="pay">
+                            <button id="pay_btn">Thanh toán</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="/js/payment.js"></script>
+
 </body>
 </html>
