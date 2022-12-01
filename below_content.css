@@ -52,6 +52,11 @@
     margin: 20px;
     transition: 0.4s;
     border-left: 5px solid var(--main);
+    text-decoration: none;
+}
+
+.services_box:visited{
+    color: black;
 }
 
 .services_box i {
