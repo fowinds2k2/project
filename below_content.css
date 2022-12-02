@@ -2,7 +2,7 @@
 @import "about.css";
 
 html{
-    height: 100vh;
+    height:fit-content;
 }
 
 .below_line{
@@ -75,6 +75,7 @@ html{
 .services_box span{
     font-size: 20px;
     margin-left: 15px;
+    color: var(--main);
 }
 
 .services_box:hover{
